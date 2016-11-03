@@ -38,7 +38,7 @@ const makeCSVformat = data => {
 const ExportCSVFile = result => {
    json2csv({ data: result, fields: title }, function(err, csv) {
      if (err) console.log(err);
-      fs.writeFile("./data/dataCSV.csv", csv);
+      fs.writeFile("./dataCSV.csv", csv);
       console.log("success");
    });
 }
